@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+}
+
+.show_head{
+    display: block;
+}
+.no_show_head{
+    display: none;
+}
+
+@media (max-width: 750px) {
+  body {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+}
+
+.show_head{
+    display: none;
+}
+.no_show_head{
+    display: block;
+}
+}
+
+nav {
+    min-height: 100vh;
+    list-style: none;
+    background-color: white;
+    padding: 20px 0;
+    border-top: solid 1px transparent;
+    border-right: solid 3px rgb(155, 148, 148);;
+    position: sticky;
+   top: 0;
+}
+
+main{
+    height: 100vh;
+    overflow-y: auto;
+}
+
+li > a{
+    color: rgb(71, 69, 69);
+    text-decoration: none;
+}
+
+nav > li {
+    padding: 15px 10px 15px 20px;
+    border-top: solid 1px black;
+}
+
+code{
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 12px;
+    color: rgb(71, 69, 69);
+}
+
+nav > header {
+    color:#070707;
+    font-size: 30px;
+    padding-top: 1px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    
+}
+
+section{
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+    color: rgb(71, 69, 69);
+    padding: 35px 20px 0 20px;
+}
+
+section > ul {
+    list-style: disc;
+    padding: 25px 0 0 75px;
+    font-size: 14px;
+}
+
+section p {
+    padding: 20px 0 0px 28px;
+    font-size: 15px;  
+}
+
+.rest {
+    font-weight: 500;
+    font-size: xx-large;
+    color: black;
+    padding: 10px 2px 0 2px;
+}
+
+.MDN{
+    color: rgb(136, 38, 136);
+    text-decoration-line: underline;
+}
+
+.ul-inner{
+    margin-left: 45px;
+}
+
+section > ul > li > ul > li{
+    padding-top: 10px;
+}
